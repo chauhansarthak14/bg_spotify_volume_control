@@ -9,3 +9,6 @@ Must do before runnig
 - either add .ahk files to your startup folder or
 - create .exe from .ahk and then add that .exe to your startup folder
 - once done you will be able to control spotify music volume even in the background.
+
+Update - 
+- If you want to control youtube volume, just replace "Spotify" with "chrome.exe" in both .py files.
