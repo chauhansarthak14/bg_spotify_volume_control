@@ -1,13 +1,19 @@
 #Requires AutoHotkey v2.0
 
 Volume_Up:: {
-    Run("python C:\Bg_Spotifyvc\SpotifyKnobControl_pycaw_i.py", , "Hide")
-    sleep 50
+    Run('python "' . A_ScriptDir . '\SpotifyKnobControl_pycaw_i.py"', , 'Hide')
+    Sleep(50)
     return
 }
 
 Volume_Down:: {
-    Run("python C:\Bg_Spotifyvc\SpotifyKnobControl_pycaw_d.py", , "Hide")
-    sleep 50
+    Run('python "' . A_ScriptDir . '\SpotifyKnobControl_pycaw_d.py"', , 'Hide')
+    Sleep(50)
+    return
+}
+
+Volume_Mute:: {
+    Run('python "' . A_ScriptDir . '\SpotifyKnobControl_pycaw_c.py"', , 'Hide')
+    Sleep(50)
     return
 }
